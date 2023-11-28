@@ -160,6 +160,7 @@ async function setInfo(frameId) {
 	}
 	//get current page url.
 	let regUrl = CONTENT_WINDOW(frameId).location.href;
+	console.log(regUrl);
 	//grabbing title stuff (corrosion sucks with this)
 	if (
 		CONTENT_WINDOW(frameId).document.getElementsByTagName('title')[0].firstChild
@@ -172,6 +173,7 @@ async function setInfo(frameId) {
 	else
 		document.getElementsByClassName(frameId)[0].firstChild.data = xor.decode(
 			regUrl.split(__uv$config.prefix).slice(1).join(__uv$config.prefix)
+			conole.log(regUrl);
 		);
 	//set url bar
 	if (getActiveFrameId() == frameId) {
@@ -257,6 +259,7 @@ function opencity(frame) {
 		regUrl.split(__uv$config.prefix).slice(1).join(__uv$config.prefix)
 	);
 	// listen for attribute changes with soon to be favicon (not done)
+	console.log(regUrl);
 }
 function skipAd() {
 	while (
