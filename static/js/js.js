@@ -395,12 +395,13 @@ document.querySelector('#urlbar').addEventListener('keydown', (event) => {
 			__uv$config.prefix +
 			xor.encode('http://' + URL_BAR.value);
 		document.getElementById(getActiveFrameId()).src = value;
+		
 	} else {
 		value =
 			'//' + location.host + __uv$config.prefix + xor.encode(URL_BAR.value);
 		document.getElementById(getActiveFrameId()).src = value;
 	}
-
+console.log(URL_BAR.value)
 	event.preventDefault();
 });
 
