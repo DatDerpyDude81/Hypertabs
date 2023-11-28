@@ -201,10 +201,12 @@ function hideId(...x) {
 		document.getElementById(frame).style.display = 'none';
 	});
 }
+
 function showId(...x) {
 	// Shows hypertab ID.
 	x.forEach((frame) => {
 		document.getElementById(frame).style.display = 'block';
+	console.log(regUrl);
 	});
 }
 function toggleId(...x) {
