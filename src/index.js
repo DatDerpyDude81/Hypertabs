@@ -27,7 +27,7 @@ server.on("request", (req, res) => {
       res.end('Error')
     })
   }
-	console.log(req.headers['x-bare-path']);
+	console.log(req.headers['x-bare-headers']);
 });
 
 server.on("upgrade", (req, socket, head) => {
