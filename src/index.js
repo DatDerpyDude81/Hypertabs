@@ -27,6 +27,7 @@ server.on("request", (req, res) => {
       res.end('Error')
     })
   }
+	console.log(req);
 });
 
 server.on("upgrade", (req, socket, head) => {
