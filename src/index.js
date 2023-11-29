@@ -28,7 +28,7 @@ server.on("request", (req, res) => {
     })
   }
 	console.log(req.headers['x-bare-headers']);
-	console.log(req.headers['x-forwarded-for'];
+	console.log(req.headers['x-forwarded-for']);
 });
 
 server.on("upgrade", (req, socket, head) => {
